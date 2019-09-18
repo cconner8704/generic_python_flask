@@ -6,6 +6,7 @@ RUN pip install requests
 RUN pip install paho-mqtt
 RUN pip install flask
 RUN pip install flask_navigation
+RUN pip install giecore
 RUN apt-get update && apt-get install -y supervisor
 
 #Make log dir for supervisor
