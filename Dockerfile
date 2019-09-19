@@ -8,6 +8,7 @@ RUN pip install flask
 RUN pip install flask_navigation
 RUN pip install psutil
 RUN pip install tablib
+RUN pip install pytz
 RUN apt-get update && apt-get install -y supervisor
 
 #Make log dir for supervisor
