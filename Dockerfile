@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.7.4-stretch
 MAINTAINER Chris Conner chrism.conner@gmail.com
 
 #Install requests, flask and supervisor
@@ -6,6 +6,8 @@ RUN pip install requests
 RUN pip install paho-mqtt
 RUN pip install flask
 RUN pip install flask_navigation
+RUN pip install psutil
+RUN pip install tablib
 RUN apt-get update && apt-get install -y supervisor
 
 #Make log dir for supervisor
