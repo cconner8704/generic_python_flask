@@ -23,6 +23,7 @@ VOLUME /application
 #Environment variables
 ENV PORT 5000
 ENV PYTHONPATH /application
+ENV CWD	/application
 
 #Expose ports
 EXPOSE ${PORT}
