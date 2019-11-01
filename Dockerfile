@@ -9,6 +9,8 @@ RUN pip install flask_navigation
 RUN pip install psutil
 RUN pip install tablib
 RUN pip install pytz
+RUN pip install paramiko
+RUN pip install scp
 RUN apt-get update && apt-get install -y supervisor
 
 #Make log dir for supervisor
